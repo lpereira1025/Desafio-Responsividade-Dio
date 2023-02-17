@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,400;0,800;1,700;1,800&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    width: 1263px;
+    height: 480px;
+
+    margin: 0 auto;
+
+    background-image: url("../imgs/Header\ Background.png");
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: aliceblue;
+}
+
+header>h1{
+    text-align: center;
+    width: 400px;
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: 3.5rem;
+}
+
+header>p{
+    width: 800px;
+    text-align: center;
+    line-height: 20px;
+}
+
+header>div{
+    display: flex;
+    gap: 20px;
+}
+
+.left{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: lightblue;
+    font-size: 16px;
+}
+
+.right{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;  
+    background-color: #23272A; 
+    color: aliceblue;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+section{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+section>div{
+    width: 700px;
+    height: 350px;
+}
+
+section>div>h2{
+    padding-top: 60px;
+}
+
+.divSec{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.divSec>h2{
+    color: #23272A;
+    line-height: 3rem;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.divSec>p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.fourthSec{
+    display: flex;
+    flex-direction: column;
+}
+
+.fourthSec>div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.fourthSec>div>h2{
+    font-family: 'Luckiest Guy', sans-serif;
+    color: #23272A;
+    line-height: 3rem;
+    font-size: 40px;
+    font-weight: bold;
+    width: 600px;
+}
+
+.fourthSec>div>p{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    width: 900px;
+    height: 50px;
+}
+
+footer{
+    width: 1260px;
+    margin: 0 auto;
+    margin-top: 450px;
+    background-color: #23272A;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width:320px) and (max-width: 768px) {
+
+    header{
+        background-image: url('../imgs/Header\ Background\ mobile.png');
+        background-repeat: no-repeat;
+        background-size: 790px;
+        width: 790px;
+        height: 700px;
+        align-items: flex-start;
+        gap: 80px;
+    }
+
+    header>p{
+        text-align: left;
+        width: 600px;
+        height: 150px;
+        margin-left: 30px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+
+    header>div{
+        flex-direction: column;
+        align-self: center;
+        width: 700px;
+        align-items: flex-start;
+    }
+
+    .left, .right{
+        width: 700px;
+        height: 60px;
+        font-size: 1.5rem;
+        border-radius: 20px;
+    }
+
+    section{
+        margin-top: 70px;
+        width: 779px;
+        height: 700px;
+        flex-direction: column;
+    }
+
+    .divSec>p{
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+
+    .secondSec{
+        flex-direction: column-reverse;
+        border: 1px solid rgb(228, 228, 228);
+    }
+
+    .fourthSec{
+        background-color: #F6F6F6;
+    }
+
+    .divSecFourth>p{
+        width: 200px;
+        height: 60px;
+        margin-bottom: 100px;
+    }
+
+    .fourthSec>div>p{
+        text-align: left;
+        font-size: 1.5rem;
+        line-height: 50px;
+        width: 700px;
+        height: 100px;
+    }
+
+    .fourthSec>div>img{
+        width: 700px;
+    }
+
+    footer{
+        width: 785px;
+        height: 200px;
+        margin-top: 300px;
+    }
+
+    footer>img{
+        padding-top: 80px;
+        width: 200px;
+        height: 50px;
+    }
+}
